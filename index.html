@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraSpaces Interiors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+    }
+    header {
+      background-color: #2c2c2c;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: #e6e1dc;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2c2c2c;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .portfolio, .testimonials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .service-box, .portfolio-box, .testimonial-box {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+    @media (max-width: 768px) {
+      .services, .portfolio, .testimonials {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AuraSpaces Interiors</h1>
+    <p>Crafting Spaces, Creating Emotions</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At AuraSpaces Interiors, we believe that every space should tell a story. With a blend of creativity and functionality, we transform homes and commercial spaces into elegant, soulful environments tailored to your lifestyle.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box"><strong>Residential Interiors</strong><br/>From cozy apartments to luxury villas, we bring comfort and class into your home.</div>
+      <div class="service-box"><strong>Modular Kitchens</strong><br/>Smart, stylish, and spacious kitchens tailored for your needs.</div>
+      <div class="service-box"><strong>Space Planning</strong><br/>Optimized layouts for efficiency and flow in every room.</div>
+      <div class="service-box"><strong>3D Visualization</strong><br/>See your space before we build it with high-quality 3D renders.</div>
+      <div class="service-box"><strong>Commercial Interiors</strong><br/>Elegant, productive workspaces designed to inspire.</div>
+      <div class="service-box"><strong>Renovation & Styling</strong><br/>Give your old spaces a fresh, modern twist.</div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio">
+      <div class="portfolio-box">Living Room Makeover</div>
+      <div class="portfolio-box">Modern Kitchen Setup</div>
+      <div class="portfolio-box">Luxury Bedroom Design</div>
+      <div class="portfolio-box">Office Space Revamp</div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial-box">"AuraSpaces turned my house into a dream home!" — Priya K.</div>
+      <div class="testimonial-box">"Highly professional and creative team." — Raj Malhotra</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@auraspaces.in</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Instagram: @auraspaces.interior</p>
+    <p>Location: Delhi NCR</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AuraSpaces Interiors. All rights reserved.</p>
+    <p>Website by ChatGPT Web Studio</p>
+  </footer>
+</body>
+</html>
