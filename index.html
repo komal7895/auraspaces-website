@@ -5,229 +5,199 @@
   <title>AuraSpaces Interiors</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: url('https://images.unsplash.com/photo-1616486734917-84e7b857d97d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
+      background: #fafafa;
       color: #333;
     }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
-      z-index: -1;
-    }
     header {
-      background-color: #2c2c2c;
-      color: white;
-      padding: 2rem;
+      background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') center/cover no-repeat;
+      padding: 5rem 2rem;
       text-align: center;
+      color: white;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
     }
     nav {
-      background-color: #e6e1dc;
+      background-color: #222;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       padding: 1rem;
     }
     nav a {
-      margin: 0.5rem 1rem;
+      color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      color: #2c2c2c;
       font-weight: bold;
     }
     section {
       padding: 3rem 1rem;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
-    .services, .portfolio, .testimonials, .expertise, .gallery, .features {
+    h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    .gallery, .features, .projects, .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
+      margin-top: 2rem;
     }
-    .service-box, .portfolio-box, .testimonial-box, .expertise-box, .gallery-box, .feature-box {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .portfolio-box img, .gallery-box img {
+    .gallery img, .projects img, .categories img {
       width: 100%;
       border-radius: 10px;
-      margin-bottom: 1rem;
+      cursor: pointer;
     }
-    .owner-section {
-      background-color: #fff;
+    .feature-box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       text-align: center;
-      padding: 3rem 1rem;
-      margin-top: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
-    .owner-section img {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+    .feature-box h3 {
+      margin-top: 0;
     }
-    .owner-section h3 {
-      margin: 0.5rem 0;
+    .contact {
+      background: #f4f4f4;
+      padding: 2rem;
+      border-radius: 10px;
     }
-    .owner-section p {
-      font-style: italic;
-      color: #555;
-    }
-    form {
+    .contact form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-    form input, form textarea {
+    .contact input, .contact textarea {
       padding: 0.75rem;
+      border-radius: 5px;
       border: 1px solid #ccc;
-      border-radius: 8px;
       font-size: 1rem;
     }
-    form button {
-      background-color: #2c2c2c;
-      color: white;
+    .contact button {
       padding: 0.75rem;
+      background-color: #222;
+      color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       cursor: pointer;
       font-size: 1rem;
     }
     footer {
-      background-color: #2c2c2c;
-      color: white;
       text-align: center;
       padding: 2rem;
-    }
-    footer p {
-      margin: 0.5rem 0;
-    }
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
+      background: #222;
       color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      font-size: 30px;
-      z-index: 1000;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>AuraSpaces Interiors</h1>
-    <p>Crafting Spaces, Creating Emotions</p>
+    <p>Elegant & Functional Interior Designs Tailored Just for You</p>
   </header>
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#expertise">Expertise</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#testimonials">Testimonials</a>
     <a href="#features">Why Us</a>
+    <a href="#projects">Past Work</a>
+    <a href="#categories">Design Categories</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
-
-  <section id="gallery">
-    <h2>Design Gallery & Color Inspirations</h2>
-    <div class="gallery">
-      <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1618221199246-a0112f28cb9d" alt="Neutral Tones Living Room">
-        <p>Soft Neutrals for Elegant Living Spaces</p>
-      </div>
-      <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1598300057351-70c6030c5be7" alt="Earthy tones and textures">
-        <p>Earthy Tones with Organic Materials</p>
-      </div>
-      <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1586201375761-83865001e17b" alt="Bold Color Statement Room">
-        <p>Bold Color Contrast for Statement Rooms</p>
-      </div>
-      <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Pastel Cozy Room">
-        <p>Pastel Palettes for Cozy Interiors</p>
-      </div>
-      <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1584941211330-7ac70e38da47" alt="Grey and Gold Luxury">
-        <p>Grey & Gold: A Luxurious Combination</p>
-      </div>
-      <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1632156631038-597da44a9a50" alt="Warm Modern Minimal">
-        <p>Warm Minimalist Modern Home</p>
-      </div>
-    </div>
-  </section>
 
   <section id="features">
     <h2>Why Choose AuraSpaces?</h2>
     <div class="features">
       <div class="feature-box">
-        <h3>Customized Designs</h3>
-        <p>Every project is personalized to reflect your unique taste and lifestyle.</p>
+        <h3>End-to-End Solutions</h3>
+        <p>From layout planning to execution, we handle everything professionally.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Experienced Designers</h3>
+        <p>Our experts bring over 10 years of creative excellence to your space.</p>
       </div>
       <div class="feature-box">
         <h3>Budget Friendly</h3>
-        <p>High-quality interiors at prices that suit your pocket without compromising elegance.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Timely Delivery</h3>
-        <p>We value your time — projects are completed as per the committed timeline.</p>
-      </div>
-      <div class="feature-box">
-        <h3>10-Year Warranty</h3>
-        <p>All our modular solutions come with a comprehensive warranty for peace of mind.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Professional Designers</h3>
-        <p>Our creative and experienced team ensures excellence in design and execution.</p>
-      </div>
-      <div class="feature-box">
-        <h3>End-to-End Service</h3>
-        <p>From concept to completion — design, manufacturing, installation and support.</p>
+        <p>We make sure style and function stay affordable without compromise.</p>
       </div>
     </div>
   </section>
 
-  <section class="owner-section">
-    <img src="https://chat.openai.com/mnt/data/WhatsApp%20Image%202025-07-05%20at%2022.01.02.jpeg" alt="Owner">
-    <h3>Komal Bisht</h3>
-    <p>"Welcome to AuraSpaces Interiors — a space where creativity, comfort, and colors meet! Each design reflects a story, and I'm passionate about turning dreams into beautiful realities. Thank you for visiting!"</p>
+  <section id="projects">
+    <h2>Past Projects</h2>
+    <div class="projects">
+      <div>
+        <img src="https://images.unsplash.com/photo-1588854337112-2b87f8d0fb3d" alt="Living Room">
+        <p>Modern 3BHK Living Room</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Kitchen">
+        <p>Contemporary Modular Kitchen</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9" alt="Bedroom">
+        <p>Elegant Master Bedroom</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1588852958631-6881c1c5cf62" alt="Workstation">
+        <p>Home Office Setup</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <h2>Design Categories</h2>
+    <div class="categories">
+      <div>
+        <img src="https://images.unsplash.com/photo-1587502536263-9298c39fd2b3" alt="Living Spaces">
+        <p>Living Room Design Ideas</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1598300057351-70c6030c5be7" alt="Color Schemes">
+        <p>Modern Color Combinations</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1584941211330-7ac70e38da47" alt="Textures">
+        <p>Texture & Wallpaper Ideas</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery of Designs</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a7ee0" alt="Accent wall">
+      <img src="https://images.unsplash.com/photo-1616486490847-5ac61ae0c343" alt="Bathroom design">
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Kids room">
+      <img src="https://images.unsplash.com/photo-1632156631038-597da44a9a50" alt="Dining area">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 AuraSpaces Interiors. All rights reserved.</p>
+    <p>&copy; 2025 AuraSpaces Interiors | Designed with passion.</p>
   </footer>
-
-  <!-- WhatsApp Chat Button -->
-  <a href="https://wa.me/917895765626" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
-    💬
-  </a>
 </body>
 </html>
