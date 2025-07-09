@@ -3,6 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AuraSpaces Interiors</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
@@ -13,10 +14,12 @@
       color: #333;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1618221047944-df2111eddfc8?w=1200&q=60') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1618221047944-df2111eddfc8?w=1200&q=80') center/cover no-repeat;
       padding: 6rem 2rem;
       text-align: center;
       color: white;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
@@ -31,6 +34,7 @@
       justify-content: center;
       flex-wrap: wrap;
       padding: 1rem;
+      border-bottom: 4px solid #f4c10f;
     }
     nav a {
       color: white;
@@ -51,6 +55,7 @@
       text-align: center;
       font-family: 'Playfair Display', serif;
       margin-bottom: 2rem;
+      color: #333;
     }
     .grid {
       display: grid;
@@ -60,13 +65,18 @@
     .grid img {
       width: 100%;
       border-radius: 10px;
-      loading: lazy;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .grid img:hover {
+      transform: scale(1.05);
     }
     .about, .services, .gallery, .contact {
       background-color: #f8f8f8;
-      border-radius: 10px;
+      border-radius: 20px;
       padding: 2rem;
       margin-top: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     .contact form {
       display: flex;
@@ -87,12 +97,18 @@
       border-radius: 5px;
       cursor: pointer;
       font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .contact button:hover {
+      background-color: #333;
     }
     footer {
       text-align: center;
       padding: 2rem;
       background: #111;
       color: white;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
     }
     .whatsapp-button {
       position: fixed;
@@ -114,8 +130,8 @@
   </style>
 </head>
 <body>
-  <a href="https://wa.me/917895930909" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
-    🟢
+  <a href="https://wa.me/917895765626" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
+    💬
   </a>
   <header>
     <h1>AuraSpaces Interiors</h1>
@@ -152,7 +168,7 @@
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Email:</strong> komalbisht470@gmail.com</p>
-    <p><strong>Phone:</strong> +91 7895930909</p>
+    <p><strong>Phone:</strong> +91 7895765626</p>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
