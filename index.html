@@ -2,51 +2,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MODAura Interiors</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>AuraSpaces Interiors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
       color: #333;
-      background-color: #f5f5f5;
     }
     header {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1618220179428-22790f5b3e15?w=1200&q=60') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1618221047944-df2111eddfc8?w=1200&q=60') center/cover no-repeat;
       padding: 6rem 2rem;
-      color: #fff;
       text-align: center;
+      color: white;
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     nav {
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #111;
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      flex-wrap: wrap;
       padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
     }
     nav a {
-      color: #444;
+      color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: bold;
+      transition: color 0.3s;
     }
     nav a:hover {
-      color: #00796b;
+      color: #f4c10f;
     }
     section {
       padding: 4rem 1rem;
@@ -55,7 +49,7 @@
     }
     h2 {
       text-align: center;
-      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
       margin-bottom: 2rem;
     }
     .grid {
@@ -65,40 +59,40 @@
     }
     .grid img {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      loading: lazy;
     }
     .about, .services, .gallery, .contact {
-      background-color: #fff;
+      background-color: #f8f8f8;
+      border-radius: 10px;
       padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 3rem;
+      margin-top: 2rem;
     }
     .contact form {
-      display: grid;
+      display: flex;
+      flex-direction: column;
       gap: 1rem;
-      margin-top: 1rem;
     }
     .contact input, .contact textarea {
       padding: 0.75rem;
       border-radius: 5px;
       border: 1px solid #ccc;
+      font-size: 1rem;
     }
     .contact button {
       padding: 0.75rem;
-      background-color: #00796b;
+      background-color: #111;
       color: white;
       border: none;
       border-radius: 5px;
-      font-weight: bold;
       cursor: pointer;
+      font-size: 1rem;
     }
     footer {
       text-align: center;
-      background-color: #00796b;
+      padding: 2rem;
+      background: #111;
       color: white;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
     }
     .whatsapp-button {
       position: fixed;
@@ -112,20 +106,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 28px;
       text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      z-index: 999;
+      font-size: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
   <a href="https://wa.me/917895930909" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
-    💬
+    🟢
   </a>
   <header>
-    <h1>MODAura Interiors</h1>
-    <p>Modern • Optimized • Design-driven Living</p>
+    <h1>AuraSpaces Interiors</h1>
+    <p>Crafting elegant and inspiring interiors for modern living</p>
   </header>
   <nav>
     <a href="#about">About</a>
@@ -133,42 +127,41 @@
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
-  <section id="about" class="about">
-    <h2>About MODAura</h2>
-    <p>MODAura Interiors specializes in curating sophisticated, modern, and stylish living spaces. We blend clean aesthetics with practical layouts that elevate comfort and elegance in residential and commercial interiors.</p>
+  <section class="about" id="about">
+    <h2>About AuraSpaces</h2>
+    <p>AuraSpaces Interiors is a creative design studio that blends luxury and functionality to craft timeless spaces. Founded by Komal Bisht, our design philosophy celebrates comfort, aesthetics, and attention to detail in every home or office we touch.</p>
   </section>
-  <section id="services" class="services">
+  <section class="services" id="services">
     <h2>Our Services</h2>
     <div class="grid">
-      <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=400&q=60" alt="Modern Kitchen">
-      <img src="https://images.unsplash.com/photo-1615873968375-3c2d0bb8b6e3?w=400&q=60" alt="Living Area Styling">
-      <img src="https://images.unsplash.com/photo-1632156631038-597da44a9a50?w=400&q=60" alt="Bedroom Lighting">
-      <img src="https://images.unsplash.com/photo-1615874959474-d609969a7ee0?w=400&q=60" alt="Workspace Vibes">
+      <img src="https://images.unsplash.com/photo-1615873968403-9ef22ed6b1b9?w=400&q=60" alt="Living Room Design">
+      <img src="https://images.unsplash.com/photo-1598300057351-70c6030c5be7?w=400&q=60" alt="Modular Kitchen">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=60" alt="Luxury Bedroom">
+      <img src="https://images.unsplash.com/photo-1584941211330-7ac70e38da47?w=400&q=60" alt="Kids Room">
     </div>
   </section>
-  <section id="gallery" class="gallery">
+  <section class="gallery" id="gallery">
     <h2>Project Gallery</h2>
     <div class="grid">
-      <img src="https://images.unsplash.com/photo-1631048367648-01f2a69a6be7?w=400&q=60" alt="Office Lounge">
-      <img src="https://images.unsplash.com/photo-1600585154374-1c8ac7e9ba17?w=400&q=60" alt="Open Living Room">
-      <img src="https://images.unsplash.com/photo-1588852958631-6881c1c5cf62?w=400&q=60" alt="Sleek Dining Space">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=60" alt="Creative Studio Space">
+      <img src="https://images.unsplash.com/photo-1588854337112-2b87f8d0fb3d?w=400&q=60" alt="Accent Wall">
+      <img src="https://images.unsplash.com/photo-1600585154374-1c8ac7e9ba17?w=400&q=60" alt="Classic Living">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a7ee0?w=400&q=60" alt="Modern Work Space">
+      <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=400&q=60" alt="Open Dining">
     </div>
   </section>
-  <section id="contact" class="contact">
+  <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you. Reach out for design consultations or project collaborations.</p>
-    <p><strong>Email:</strong> komalbisht470@gmail.com<br>
-       <strong>Phone:</strong> +91 7895930909</p>
+    <p><strong>Email:</strong> komalbisht470@gmail.com</p>
+    <p><strong>Phone:</strong> +91 7895930909</p>
     <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
   <footer>
-    <p>&copy; 2025 MODAura Interiors | Crafted by Komal Bisht</p>
+    <p>&copy; 2025 AuraSpaces Interiors. Designed by Komal Bisht. All rights reserved.</p>
   </footer>
 </body>
 </html>
