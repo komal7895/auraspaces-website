@@ -10,41 +10,20 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: #ffffff;
+      background: linear-gradient(to right, #f9f9f9, #fffdf5);
       color: #333;
     }
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1578898887932-2fd10c49e5d0?w=1600&q=80') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?luxury-interior') center/cover no-repeat;
       padding: 6rem 2rem;
       text-align: center;
       color: white;
       border-bottom-left-radius: 60px;
       border-bottom-right-radius: 60px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 2s ease-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      margin-bottom: 1rem;
-      animation: slideIn 2s ease-out;
-    }
-    header p {
-      font-size: 1.5rem;
-      font-style: italic;
-      letter-spacing: 1px;
-      animation: slideIn 2.5s ease-out;
-    }
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
     nav {
-      background-color: #111;
+      background: linear-gradient(to right, #222, #444);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -52,26 +31,18 @@
       border-bottom: 4px solid #f4c10f;
     }
     nav a {
-      color: white;
+      color: #f4c10f;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
     }
-    nav a:hover {
-      color: #f4c10f;
-    }
+    nav a:hover { color: white; }
     section {
       padding: 4rem 1rem;
       max-width: 1200px;
       margin: auto;
     }
-    h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 2rem;
-      color: #333;
-    }
+    h2 { text-align: center; font-family: 'Playfair Display', serif; color: #333; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -83,39 +54,13 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
-    .grid img:hover {
-      transform: scale(1.05);
-    }
-    .about, .services, .gallery, .contact {
-      background-color: #f8f8f8;
+    .grid img:hover { transform: scale(1.05); }
+    .content-section {
+      background: linear-gradient(to bottom right, #ffffff, #ffeec7);
       border-radius: 20px;
       padding: 2rem;
-      margin-top: 2rem;
+      margin: 2rem auto;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .contact input, .contact textarea {
-      padding: 0.75rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    .contact button {
-      padding: 0.75rem;
-      background-color: #111;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-    .contact button:hover {
-      background-color: #333;
     }
     footer {
       text-align: center;
@@ -139,58 +84,70 @@
       justify-content: center;
       text-decoration: none;
       font-size: 30px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      z-index: 1000;
     }
   </style>
 </head>
 <body>
-  <a href="https://wa.me/917895765626" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
-    💬
-  </a>
+  <a href="https://wa.me/917895765626" class="whatsapp-button" target="_blank">💬</a>
+
   <header>
     <h1>AuraSpaces Interiors</h1>
     <p>Crafting elegant and inspiring interiors for modern living</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
-  <section class="about" id="about">
-    <h2>About AuraSpaces</h2>
-    <p>AuraSpaces Interiors is a creative design studio that blends luxury and functionality to craft timeless spaces. Founded by Komal Bisht, our design philosophy celebrates comfort, aesthetics, and attention to detail in every home or office we touch.</p>
+
+  <section id="about" class="content-section">
+    <h2>About Us</h2>
+    <p>AuraSpaces Interiors was founded with the vision of bringing elegance, comfort, and sophistication into every space we touch. With a team of dedicated interior designers, we transform ideas into beautiful realities tailored to your lifestyle.</p>
+    <p>Our philosophy blends artistic inspiration with practical execution. We believe great design should not only be aesthetically pleasing but also serve a purpose in everyday life.</p>
   </section>
-  <section class="services" id="services">
+
+  <section id="services" class="content-section">
     <h2>Our Services</h2>
+    <ul>
+      <li><strong>Residential Interior Design:</strong> Personalized home decor and functional layouts for modern living.</li>
+      <li><strong>Commercial Design:</strong> Office, retail, and hospitality interiors that boost professionalism and productivity.</li>
+      <li><strong>Modular Kitchens:</strong> Space-saving, ergonomic kitchens with modern fittings.</li>
+      <li><strong>3D Visualization:</strong> Preview your space with high-quality renders before execution.</li>
+      <li><strong>Turnkey Projects:</strong> End-to-end interior solutions — from concept to completion.</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="content-section">
+    <h2>Gallery</h2>
     <div class="grid">
-      <img src="https://images.unsplash.com/photo-1615873968403-9ef22ed6b1b9?w=400&q=60" alt="Living Room Design">
-      <img src="https://images.unsplash.com/photo-1598300057351-70c6030c5be7?w=400&q=60" alt="Modular Kitchen">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=60" alt="Luxury Bedroom">
-      <img src="https://images.unsplash.com/photo-1584941211330-7ac70e38da47?w=400&q=60" alt="Kids Room">
+      <img src="https://source.unsplash.com/400x300/?living-room" alt="Living Room Design">
+      <img src="https://source.unsplash.com/400x300/?bedroom-interior" alt="Bedroom Interior">
+      <img src="https://source.unsplash.com/400x300/?kitchen-modern" alt="Modern Kitchen">
+      <img src="https://source.unsplash.com/400x300/?interior-design-office" alt="Office Interior">
+      <img src="https://source.unsplash.com/400x300/?interior-decor" alt="Decor and Furnishings">
+      <img src="https://source.unsplash.com/400x300/?luxury-interior" alt="Luxury Designs">
+      <img src="https://source.unsplash.com/400x300/?interior-space" alt="Functional Spaces">
+      <img src="https://source.unsplash.com/400x300/?home-renovation" alt="Home Renovation">
+      <img src="https://source.unsplash.com/400x300/?dining-room" alt="Dining Area">
+      <img src="https://source.unsplash.com/400x300/?bathroom-design" alt="Bathroom Design">
     </div>
   </section>
-  <section class="gallery" id="gallery">
-    <h2>Project Gallery</h2>
-    <div class="grid">
-      <img src="https://images.unsplash.com/photo-1588854337112-2b87f8d0fb3d?w=400&q=60" alt="Accent Wall">
-      <img src="https://images.unsplash.com/photo-1600585154374-1c8ac7e9ba17?w=400&q=60" alt="Classic Living">
-      <img src="https://images.unsplash.com/photo-1615874959474-d609969a7ee0?w=400&q=60" alt="Modern Work Space">
-      <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=400&q=60" alt="Open Dining">
-    </div>
-  </section>
-  <section class="contact" id="contact">
+
+  <section id="contact" class="content-section">
     <h2>Contact Us</h2>
-    <p><strong>Email:</strong> komalbisht470@gmail.com</p>
-    <p><strong>Phone:</strong> +91 7895765626</p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
+    <p>📞 Call us at: <strong>+91 7895765626</strong></p>
+    <p>📧 Email: <strong>komalbisht470@gmail.com</strong></p>
+    <p>👩 Owner: <strong>Komal Bisht</strong></p>
   </section>
+
   <footer>
     <p>&copy; 2025 AuraSpaces Interiors. Designed by Komal Bisht. All rights reserved.</p>
   </footer>
